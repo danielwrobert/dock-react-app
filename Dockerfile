@@ -7,9 +7,6 @@ LABEL maintainer="danielwrobert@gmail.com"
 RUN apt-get update && \
     npm install -g create-react-app
 
-# Expose/use port 8888 on the container
-EXPOSE 3000
-
 # Create src directory (if it doesn't already exist)
 RUN mkdir -p /usr/src/
 
@@ -24,6 +21,9 @@ WORKDIR /usr/src/app/
 
 # Copy over .env (no path to .env file needed because Dockerfile and .env file are in same folder. If not, specified path would be needed.)
 COPY .env /usr/src/app/
+
+# Expose/use port 3000 on the container
+EXPOSE 3000
 
 # Start the node app with the npm start command
 CMD ["npm", "start"]

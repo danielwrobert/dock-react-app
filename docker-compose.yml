@@ -1,13 +1,14 @@
 version: "2"
 
 services:
+
   react:
-    container_name: "react-app"
+    container_name: react-app
     build: .
     environment:
       NODE_ENV: development
     ports:
-      - '3000:3000'
-      - "35729:35729"
+      - 3000:3000
+      - 35729:35729
     volumes:
-      - ./app:/usr/src/app
+      - /usr/src/app/
