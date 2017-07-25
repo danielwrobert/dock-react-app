@@ -5,6 +5,7 @@ LABEL maintainer="danielwrobert@gmail.com"
 
 # Upodate system and install Create React App globally
 RUN apt-get update && \
+    apt-get install vim -y && \
     npm install -g create-react-app
 
 # Create src directory (if it doesn't already exist)
@@ -29,4 +30,5 @@ EXPOSE 3000
 CMD ["npm", "start"]
 
 # Volume to expose inside the container
-VOLUME /usr/src/app/
+# Doesn't actually map anything. Lets user know to create that volume mapping on their container.
+VOLUME /usr/src/app

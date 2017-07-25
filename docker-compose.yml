@@ -6,9 +6,8 @@ services:
     container_name: react-app
     build: .
     environment:
-      NODE_ENV: development
+        NODE_ENV: development
     ports:
-      - 3000:3000
-      - 35729:35729
-    volumes:
-      - /usr/src/app/
+        - "3000:3000"
+    #volumes:
+        #- ./app:/usr/src/app
