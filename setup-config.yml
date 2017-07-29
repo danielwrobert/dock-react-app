@@ -1,3 +1,4 @@
+# Same as docker-compose file but no npm start command
 version: "2"
 
 services:
@@ -10,4 +11,3 @@ services:
         - "3000:3000"
     volumes:
         - ./app:/usr/src/app
-    command: npm start
