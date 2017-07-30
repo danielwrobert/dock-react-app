@@ -3,7 +3,7 @@ version: "2"
 services:
 
   app:
-    image: react-app
+    image: dock-react-app
     environment:
         NODE_ENV: development
     ports:
