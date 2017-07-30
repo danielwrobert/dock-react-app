@@ -1,4 +1,4 @@
-# React + Docker
+# Docker + Create React App
 
 A React development environment using Docker and Create React App.
 
@@ -14,3 +14,5 @@ Clone this repo to your project directory - `git clone [REPO URL] [LOCAL PROJECT
 1. Edit the application files from the shared `app` directory on your local machine.
 1. Stop your Docker container by running `docker-compose stop`.
 1. If you're completely finished with you application and wish to remove it from your machine, you can do so by running `docker-compose down --volumes` (you can view the full `docker-compose` CLI reference [here](https://docs.docker.com/compose/reference/overview/).
+
+_TODO: Planning to publish image to Docker Hub and move initial setup commands to a `setup.sh` script._
