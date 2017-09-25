@@ -18,5 +18,3 @@ Clone this repo to your project directory - `git clone git@github.com:danielwrob
 **Things to note**
 
 The in the Docker file, we're starting from the `node:latest` image. This gives you the latest version of Node. If you're working on a project (especially if you pull other people in), you may want to explicitly set a version to ensure that everyone is working from the exact same environment. You can see the available versions [here](https://store.docker.com/images/node).
-
-_TODO: Planning to publish image to Docker Hub and move initial setup commands to a `setup.sh` script._
