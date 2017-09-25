@@ -1,4 +1,4 @@
-# Start with Node v8.0.0
+# Start with latest version of Node (can adjust this if you prefer the LTS release track).
 FROM node:latest
 
 LABEL maintainer="danielwrobert@gmail.com"
