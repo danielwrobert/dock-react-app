@@ -8,11 +8,12 @@ Clone this repo to your project directory - `git clone git@github.com:danielwrob
 
 ## Setup and Usage
 
-1. Run the setup script via `sh bin/setup.sh`. This will check if the image has already been built on your machine. If not, it will build the image and then create the container.
-1. Run your application with the Docker image by running `docker-compose up -d`.
+1. Run the setup script by typing `sh bin/setup.sh` in your terminal. This will check if the image has already been built on your machine. If not, it will build the image and then create the container.
+1. Run your application with the Docker image for the first time by running `docker-compose up -d`.
 1. Edit the application files from the shared `app` directory on your local machine.
-1. Stop your Docker container by running `docker-compose stop`.
-1. If you're completely finished with you application and wish to remove it from your machine, you can do so by running `docker-compose down --volumes` (you can view the full `docker-compose` CLI reference [here](https://docs.docker.com/compose/reference/overview/).
+1. When you're finished working, you can stop your Docker container by running `docker-compose stop`.
+1. To start your Docker container back up, run `docker-compose stop`.
+1. If you're _completely_ finished with you application and wish to remove it from your machine, you can do so by running `docker-compose down --volumes` (you can view the full `docker-compose` CLI reference [here](https://docs.docker.com/compose/reference/overview/).
 
 **Things to note**
 
